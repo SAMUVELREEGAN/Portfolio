@@ -15,7 +15,7 @@ const Models = (props) => {
     e.preventDefault();
     try {
       // Sending form data to the backend
-      await axios.post("http://localhost:8000/sendemail", formData);
+      await axios.post("https://portfolio-1-yema.onrender.com/sendemail", formData);
       toast.success("Email sent successfully!");
       setFormData({ userEmail: "", message: "" });
     } catch (error) {
